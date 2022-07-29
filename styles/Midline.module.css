@@ -3,6 +3,7 @@
   height: 0.5rem;
   position: relative;
   transition: all 0.2s ease-in-out;
+  margin: 2rem 0;
 }
 
 .midline::before {

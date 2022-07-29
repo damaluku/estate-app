@@ -24,6 +24,7 @@
   text-transform: capitalize;
   font-size: clamp(1.5rem, 2rem, 2.5rem);
   font-weight: bold;
+  color: var(--custom);
 }
 
 .contactUs {

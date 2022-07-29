@@ -57,3 +57,11 @@
   margin: 0 1rem;
   text-transform: capitalize;
 }
+
+/* media */
+
+@media screen and (max-width: 750px) {
+  .rightsLink {
+    gap: 1rem;
+  }
+}

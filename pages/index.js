@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Carousel from "../components/Carousel";
 
 export default function Home() {
   return (
@@ -27,7 +26,7 @@ export default function Home() {
           <span>home</span>
         </div>
       </main>
-      <video className={styles.homeVideo} autoPlay muted loop priority>
+      <video className={styles.homeVideo} autoPlay muted loop>
         <source src="/estate.mp4" />
       </video>
     </div>

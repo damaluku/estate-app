@@ -5,6 +5,7 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Midline from "./Midline";
+import { SubLine } from "../components/styled";
 
 const Footer = () => {
   useEffect(() => {

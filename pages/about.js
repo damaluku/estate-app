@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Container, Main } from "../components/styled";
 import { Footer } from "../components/basket";
 import styles from "../styles/About.module.css";
-import Carousel from "../components/Carousel";
 import Midline from "../components/Midline";
 import Image from "next/image";
 import { people } from "../components/basket";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ImageCarousel } from "../components/basket";
 
 const About = () => {
   useEffect(() => {
@@ -32,7 +32,7 @@ const About = () => {
               </span>
             </div>
             <div className={styles.carousel}>
-              <Carousel />
+              <ImageCarousel />
             </div>
             <div className={styles.what}>
               <div className={styles.whatWeDo}>

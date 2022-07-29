@@ -8,6 +8,9 @@ body {
   background-color: var(--primary);
   overflow-x: hidden;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-snap-type: proximity;
 }
 
 * {

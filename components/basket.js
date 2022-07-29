@@ -1,5 +1,7 @@
 export { default as Navbar } from "../components/Navbar";
 export { default as Footer } from "../components/Footer";
+export { default as Midline } from "../components/Midline";
+export { default as ImageCarousel } from "../components/ImageCarousel";
 
 export const portfolioData = [
   {
