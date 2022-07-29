@@ -1,0 +1,67 @@
+.contact {
+  padding: 2rem 0;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.typed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-transform: capitalize;
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  font-weight: bold;
+}
+
+.contactUs {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.contactUs h1 {
+  font-size: 3rem;
+  grid-column: span 2;
+}
+
+.socials {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.socials svg {
+  font-size: 3rem;
+}
+
+.facebook {
+  justify-self: end;
+}
+.twitter {
+  justify-self: start;
+}
+.whatsapp {
+  justify-self: end;
+}
+.phone {
+  justify-self: start;
+}

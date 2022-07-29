@@ -1,0 +1,61 @@
+.portfolioConatainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 4rem 1rem;
+}
+
+.portfolioBox {
+  width: 100%;
+  height: 100%;
+  background-color: var(--base);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px 3px var(--secondary), 0 0 3px 5px var(--secondary);
+  cursor: pointer;
+}
+
+.portfolioBox h2,
+.portfolioBox h4 {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("../public/prop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--custom);
+  background-blend-mode: darken;
+  transition: all 0.3s ease-in;
+}
+
+.image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in;
+  text-transform: capitalize;
+  display: grid;
+  place-content: center;
+  font-size: clamp(2rem, 2.5rem, 3rem);
+}
+
+.image:hover::before {
+  background-color: rgba(151, 37, 151, 0.502);
+  content: "View project";
+}
+
+.image img {
+  transition: all 0.3s ease-in;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
