@@ -13,9 +13,24 @@
   z-index: 2;
 }
 
-.nav img {
+.logo {
+  border: 2px solid var(--base);
+  width: 100px;
+  height: 100px;
+  position: relative;
   border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 2px 3px 2px black;
+  transition: all 0.2s ease-in;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav img {
   cursor: pointer;
+  border: 5px solid var(--primary);
 }
 
 .nav ul {
@@ -25,6 +40,11 @@
 .nav ul li {
   margin-left: clamp(1rem, 1.5rem, 2rem);
   display: inline-block;
+  text-shadow: 1px 1px 3px var(--secondary);
+  transition: all 0.2s ease-in;
+}
+.nav ul li:hover {
+  transform: scale(1.1);
 }
 
 .nav ul li a,
@@ -89,6 +109,12 @@
   position: absolute;
   top: 2.5rem;
   right: 2rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: all 0.2s ease-in;
+}
+.overlayClose:hover {
+  transform: scale(1.1);
 }
 
 .smallscreenOverlayLinks {
@@ -103,9 +129,14 @@
   text-align: center;
 }
 
-.menuButton {
+.menuOpen {
   cursor: pointer;
   font-size: 2.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.menuOpen:hover {
+  transform: scale(1.1);
 }
 
 /* overlay */

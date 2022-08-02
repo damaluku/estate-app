@@ -30,7 +30,7 @@ const Portfolio = () => {
                           src={portfolio.image}
                           alt={portfolio.address}
                           layout="fill"
-                          loading="lazy"
+                          priority
                         />
                       </div>
                       <h2>{portfolio.address} </h2>

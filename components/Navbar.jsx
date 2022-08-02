@@ -12,9 +12,11 @@ const Navbar = () => {
     <>
       <header>
         <nav className={styles.nav}>
-          <Link href="/">
-            <Image src="/logo.png" alt="logo" width="100" height="100" />
-          </Link>
+          <div className={styles.logo}>
+            <Link href="/">
+              <Image src="/logo.png" alt="logo" layout="fill" />
+            </Link>
+          </div>
           <ul className={styles.topMenu}>
             <li>
               <Link href="portfolio">portfolio</Link>
@@ -29,11 +31,12 @@ const Navbar = () => {
 
           <div className={styles.smallScreen}>
             {toggleMenu ? (
-              <span className={styles.menuButton}>
+              <span>
                 <RiMenu4Line
                   onClick={() => {
                     setToggleMenu(false);
                   }}
+                  className={styles.menuOpen}
                 />
               </span>
             ) : (
