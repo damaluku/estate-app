@@ -21,19 +21,39 @@ body {
 }
 
 :root {
+  /* color */
   --primary: #000;
   --secondary: #fff;
   --custom: #f6f4f2;
   --base: #fab162;
+  --overlay: rgb(250, 177, 98, 0.502);
+  /* text */
+  --largeText: 3rem;
+  --midText: 2rem;
+  --smallText: 1rem;
+  --paragraph: 1.5rem;
+  --logoText: 3.5rem;
+  /* padding */
+  --largePadding: 3rem;
+  --midPadding: 2rem;
+  --smallPadding: 1rem;
+  /* margin */
+  --largeMargin: 3rem;
+  --midMargin: 2rem;
+  --smallMargin: 1rem;
+  /* border */
+  --largeBorder: 1.5rem;
+  --midBorder: 1rem;
+  --smallBorder: 0.5rem;
 }
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --primary: #fff;
     --secondary: #000;
     --custom: #f6f4f2;
     --base: #79c2f7;
   }
-}
+} */
 
 a {
   color: inherit;
@@ -53,10 +73,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem 0 2rem;
+  padding: var(--midPadding) 0;
   overflow: hidden;
   border-top: 0.3rem solid var(--base);
-  margin-top: 2rem;
+  margin-top: var(--midMargin);
 }
 
 footer h3 {

@@ -11,7 +11,7 @@
   color: var(--custom);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 5px 3px var(--secondary), 0 0 3px 5px var(--base);
+  box-shadow: 0 0 3px 3px var(--secondary), 0 0 3px 3px var(--base);
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .image:hover::before {
-  background-color: rgba(151, 37, 151, 0.502);
+  background-color: var(--overlay);
   content: "View project";
 }
 

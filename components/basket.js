@@ -28,30 +28,6 @@ export const portfolioData = [
     description: "Luxury Vacation Rental",
     image: "/property4.jpg",
   },
-  {
-    id: "5",
-    address: "3817 N Ashland Ave",
-    description: "48 Unit Ground Up Development",
-    image: "/property1.jpg",
-  },
-  {
-    id: "6",
-    address: "2042 - 2046 W Irving Park",
-    description: "20 Unit Ground Up Development",
-    image: "/property2.jpg",
-  },
-  {
-    id: "7",
-    address: "Kedzie & Palmer Portfolio",
-    description: "12 Unit Redevelopment",
-    image: "/property3.jpg",
-  },
-  {
-    id: "8",
-    address: "101 Christie Lane",
-    description: "Luxury Vacation Rental",
-    image: "/property4.jpg",
-  },
 ];
 
 export const people = [

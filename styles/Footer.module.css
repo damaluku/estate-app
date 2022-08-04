@@ -77,6 +77,12 @@
 .links ul li {
   margin: 0 1rem;
   text-transform: capitalize;
+  font-weight: bold;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
+  transition: all 0.2s ease-in;
+}
+.links ul li:hover {
+  transform: scale(1.1);
 }
 
 /* media */

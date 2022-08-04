@@ -53,6 +53,10 @@
 
 .socials svg {
   font-size: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+.socials svg:hover {
+  transform: scale(1.1);
 }
 
 .facebook {

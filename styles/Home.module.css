@@ -1,14 +1,16 @@
 .container {
   background-color: var(--primary);
-  background-image: url("/model.jpg");
+  background-image: url("/bg1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 .main {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
