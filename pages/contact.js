@@ -33,7 +33,7 @@ const Contact = () => {
               <Image
                 src="/property3.jpg"
                 alt="property "
-                priority
+                priority={true}
                 layout="fill"
               />
               <div className={styles.typed}>

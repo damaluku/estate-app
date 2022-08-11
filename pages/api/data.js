@@ -1,5 +1,14 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+import { portfolioData, images, people } from "../../components/basket";
+
+const posts = portfolioData;
+const postImages = images;
+const postPeople = people;
+
+export default { posts, postImages, postPeople };
+
+// OR
+
+/* export default {
   posts: [
     {
       id: 1,
@@ -32,4 +41,6 @@ export default {
       image: "/prop.jpg",
     },
   ],
-};
+  people,
+  images,
+}; */

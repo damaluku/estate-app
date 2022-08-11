@@ -3,7 +3,7 @@ import styles from "../../styles/Details.module.css";
 import Image from "next/image";
 import { Container } from "../../components/styled";
 import getPost from "../../lib/helper";
-import Link from "next/link";
+// import collection from "../api/data";
 
 const Details = ({ image, address, description }) => {
   return (
@@ -22,6 +22,10 @@ const Details = ({ image, address, description }) => {
 };
 
 export default Details;
+
+// ................................................
+
+// ................................................
 
 export async function getStaticProps({ params }) {
   const posts = await getPost(params.id);

@@ -26,28 +26,23 @@ const Portfolio = () => {
             {data &&
               data.map((portfolio) => {
                 return (
-                  <>
-                    <Link
-                      href={`/portfolio/${portfolio.id}`}
-                      key={portfolio.id}
+                  <Link href={`/portfolio/${portfolio.id}`} key={portfolio.id}>
+                    <div
+                      className={styles.portfolioBox}
+                      data-aos="fade-up-left"
                     >
-                      <div
-                        className={styles.portfolioBox}
-                        data-aos="fade-up-left"
-                      >
-                        <div className={styles.image}>
-                          <Image
-                            src={portfolio.image}
-                            alt={portfolio.address}
-                            layout="fill"
-                            priority
-                          />
-                        </div>
-                        <h2>{portfolio.address} </h2>
-                        <h4>{portfolio.description}</h4>
+                      <div className={styles.image}>
+                        <Image
+                          src={portfolio.image}
+                          alt={portfolio.address}
+                          layout="fill"
+                          priority
+                        />
                       </div>
-                    </Link>
-                  </>
+                      <h2>{portfolio.address} </h2>
+                      <h4>{portfolio.description}</h4>
+                    </div>
+                  </Link>
                 );
               })}
           </div>

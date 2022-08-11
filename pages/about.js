@@ -82,8 +82,8 @@ const About = () => {
 
               {people.map((person) => {
                 return (
-                  <>
-                    <div className={styles.bio} key={person.id}>
+                  <div key={person.id}>
+                    <div className={styles.bio}>
                       <div className={styles.image}>
                         <Image
                           src={person.image}
@@ -103,7 +103,7 @@ const About = () => {
                         </p>
                       </div>
                     </div>
-                  </>
+                  </div>
                 );
               })}
             </div>
