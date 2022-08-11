@@ -19,13 +19,13 @@ const Navbar = () => {
           </div>
           <ul className={styles.topMenu}>
             <li>
-              <Link href="portfolio">portfolio</Link>
+              <Link href="/portfolio">portfolio</Link>
             </li>
             <li>
-              <Link href="about">about</Link>
+              <Link href="/about">about</Link>
             </li>
             <li>
-              <Link href="contact">contact</Link>
+              <Link href="/contact">contact</Link>
             </li>
           </ul>
 
@@ -55,21 +55,21 @@ const Navbar = () => {
                       setToggleMenu(true);
                     }}
                   >
-                    <Link href="portfolio">portfolio</Link>
+                    <Link href="/portfolio">portfolio</Link>
                   </li>
                   <li
                     onClick={() => {
                       setToggleMenu(true);
                     }}
                   >
-                    <Link href="about">about</Link>
+                    <Link href="/about">about</Link>
                   </li>
                   <li
                     onClick={() => {
                       setToggleMenu(true);
                     }}
                   >
-                    <Link href="contact">contact</Link>
+                    <Link href="/contact">contact</Link>
                   </li>
                 </ul>
               </div>

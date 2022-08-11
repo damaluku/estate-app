@@ -11,8 +11,9 @@
   color: var(--custom);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 3px 3px var(--secondary), 0 0 3px 3px var(--base);
   cursor: pointer;
+  border-radius: var(--smallBorder);
+  overflow: hidden;
 }
 
 .portfolioBox h2,
