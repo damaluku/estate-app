@@ -28,7 +28,7 @@ export default Details;
 // ................................................
 
 export const getStaticProps = async ({ params }) => {
-  const posts = db.find((item) => item.id === 4);
+  const posts = db.find((item) => item.id == params.id);
   const { address, description, image } = posts;
 
   return {
