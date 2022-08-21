@@ -3,6 +3,7 @@ import styles from "../../styles/Details.module.css";
 import Image from "next/image";
 import { Container } from "../../components/styled";
 import getPost from "../../lib/helper";
+import Link from "next/link";
 // import collection from "../api/data";
 
 const Details = ({ image, address, description }) => {
@@ -16,14 +17,13 @@ const Details = ({ image, address, description }) => {
           <h2>{address}</h2>
           <p>{description}</p>
         </div>
+        <Link href="/portfolio">Return</Link>
       </Container>
     </>
   );
 };
 
 export default Details;
-
-// ................................................
 
 // ................................................
 

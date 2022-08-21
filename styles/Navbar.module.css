@@ -25,7 +25,7 @@
 }
 
 .logo:hover {
-  transform: scale(1.1) rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .nav img {
@@ -43,7 +43,7 @@
   transition: all 0.2s ease-in;
 }
 .nav ul li:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .nav ul li a:active {
   color: var(--secondary);
@@ -91,23 +91,23 @@
 
 @-webkit-keyframes slide-bottom {
   0% {
-    -webkit-transform: translateY(-25%);
-    transform: translateY(-25%);
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-bottom {
   0% {
-    -webkit-transform: translateY(-25%);
-    transform: translateY(-25%);
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
   }
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 .overlayClose {

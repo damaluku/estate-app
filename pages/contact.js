@@ -46,23 +46,26 @@ const Contact = () => {
               <h1>We&apos;d love to hear from you</h1>
               <div className={styles.socials}>
                 <a
-                  href="http//facebook.com"
+                  href="https://about.facebook.com"
                   target="_blank"
                   className={styles.facebook}
+                  rel="noreferrer"
                 >
                   <FaFacebookF />
                 </a>
                 <a
-                  href="http//twitter.com"
+                  href="https://twitter.com/"
                   target="_blank"
                   className={styles.twitter}
+                  rel="noreferrer"
                 >
                   <FaTwitter />
                 </a>
                 <a
-                  href="http//whatsapp.com"
+                  href="https://www.whatsapp.com/"
                   target="_blank"
                   className={styles.whatsapp}
+                  rel="noreferrer"
                 >
                   <FaWhatsapp />
                 </a>

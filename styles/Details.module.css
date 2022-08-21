@@ -25,3 +25,13 @@
 .container p {
   line-height: 2rem;
 }
+
+.container a {
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.container a:hover {
+  color: var(--overlay);
+  letter-spacing: 5px;
+}
