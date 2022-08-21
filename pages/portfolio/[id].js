@@ -2,11 +2,11 @@ import React from "react";
 import styles from "../../styles/Details.module.css";
 import Image from "next/image";
 import { Container } from "../../components/styled";
-import getPost from "../../lib/helper";
+// import getPost from "../../lib/helper";
 import Link from "next/link";
-// import collection from "../api/data";
+import db from "../api/data.json";
 
-const Details = ({ image, address, description }) => {
+const Details = ({ image, description, address }) => {
   return (
     <>
       <Container className={styles.container}>
@@ -27,7 +27,36 @@ export default Details;
 
 // ................................................
 
-export async function getStaticProps({ params }) {
+export const getStaticProps = async ({ params }) => {
+  const posts = db.find((item) => item.id === 4);
+  const { address, description, image } = posts;
+
+  return {
+    props: {
+      posts,
+      address,
+      description,
+      image,
+    },
+  };
+};
+
+export const getStaticPaths = async () => {
+  const paths = db.map((post) => {
+    return {
+      params: {
+        id: post?.id.toString(),
+      },
+    };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+// ..................................................
+/* export async function getStaticProps({ params }) {
   const posts = await getPost(params.id);
 
   return {
@@ -49,4 +78,4 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+} */
