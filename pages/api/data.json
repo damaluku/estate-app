@@ -3,24 +3,28 @@
     "id": 1,
     "address": "3817 N Ashland Ave",
     "description": "48 Unit Ground Up Development",
+    "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eum pariatur error, delectus quibusdam obcaecati doloremque nulla. Praesentium, ratione enim possimus ea, debitis adipisci, repellat accusamus et quas qui aperiam sapiente consectetur nesciunt quod?",
     "image": "/property1.jpg"
   },
   {
     "id": 2,
     "address": "2042 - 2046 W Irving Park",
     "description": "20 Unit Ground Up Development",
+    "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eum pariatur error, delectus quibusdam obcaecati doloremque nulla. Praesentium, ratione enim possimus ea, debitis adipisci, repellat accusamus et quas qui aperiam sapiente consectetur nesciunt quod?",
     "image": "/property2.jpg"
   },
   {
     "id": 3,
     "address": "Kedzie & Palmer Portfolio",
     "description": "12 Unit Redevelopment",
+    "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eum pariatur error, delectus quibusdam obcaecati doloremque nulla. Praesentium, ratione enim possimus ea, debitis adipisci, repellat accusamus et quas qui aperiam sapiente consectetur nesciunt quod?",
     "image": "/property3.jpg"
   },
   {
     "id": 4,
     "address": "101 Christie Lane",
     "description": "Luxury Vacation Rental",
+    "details": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eum pariatur error, delectus quibusdam obcaecati doloremque nulla. Praesentium, ratione enim possimus ea, debitis adipisci, repellat accusamus et quas qui aperiam sapiente consectetur nesciunt quod?",
     "image": "/property4.jpg"
   }
 ]

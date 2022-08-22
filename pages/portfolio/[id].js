@@ -6,7 +6,7 @@ import { Container } from "../../components/styled";
 import Link from "next/link";
 import db from "../api/data.json";
 
-const Details = ({ image, description, address }) => {
+const Details = ({ image, description, address, details }) => {
   return (
     <>
       <Container className={styles.container}>
@@ -15,7 +15,8 @@ const Details = ({ image, description, address }) => {
             <Image src={image} alt={address} layout="fill" />
           </div>
           <h2>{address}</h2>
-          <p>{description}</p>
+          <h3>{description}</h3>
+          <p>{details}</p>
         </div>
         <Link href="/portfolio">Return</Link>
       </Container>
@@ -29,7 +30,7 @@ export default Details;
 
 export const getStaticProps = async ({ params }) => {
   const posts = db.find((item) => item.id == params.id);
-  const { address, description, image } = posts;
+  const { address, description, image, details } = posts;
 
   return {
     props: {
@@ -37,6 +38,7 @@ export const getStaticProps = async ({ params }) => {
       address,
       description,
       image,
+      details,
     },
   };
 };

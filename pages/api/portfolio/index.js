@@ -1,4 +1,4 @@
-import data from "../data";
+import data from "../data.json";
 
 export default function handler(req, res, next) {
   const { posts } = data;
