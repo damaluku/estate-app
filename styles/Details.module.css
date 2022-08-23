@@ -20,19 +20,23 @@
 .container h2 {
   text-transform: capitalize;
   margin: 1rem 0;
+  font-size: 3rem;
 }
 
 .container h3 {
   color: var(--overlay);
+  font-size: 1.5rem;
 }
 
 .container p {
   line-height: 2rem;
+  margin: 2rem 0;
 }
 
 .container a {
   transition: all 0.3s;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .container a:hover {

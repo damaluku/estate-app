@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../../styles/Details.module.css";
 import Image from "next/image";
 import { Container } from "../../components/styled";
-// import getPost from "../../lib/helper";
 import Link from "next/link";
 import db from "../api/data.json";
 
@@ -18,7 +17,7 @@ const Details = ({ image, description, address, details }) => {
           <h3>{description}</h3>
           <p>{details}</p>
         </div>
-        <Link href="/portfolio">Return</Link>
+        <Link href="/portfolio">Return to Portfolio</Link>
       </Container>
     </>
   );
@@ -56,28 +55,3 @@ export const getStaticPaths = async () => {
     fallback: false,
   };
 };
-
-// ..................................................
-/* export async function getStaticProps({ params }) {
-  const posts = await getPost(params.id);
-
-  return {
-    props: posts,
-  };
-}
-
-export async function getStaticPaths() {
-  const posts = await getPost();
-
-  const paths = posts.map((post) => {
-    return {
-      params: {
-        id: post.id.toString(),
-      },
-    };
-  });
-  return {
-    paths,
-    fallback: false,
-  };
-} */

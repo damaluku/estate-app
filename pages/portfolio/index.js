@@ -6,18 +6,12 @@ import styles from "../../styles/Portfolio.module.css";
 import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import fetcher from "../../lib/fetcher";
 import data from "../api/data.json";
 
 const Portfolio = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-
-  /* const { data, isloading, isError } = fetcher(`api/portfolio`);
-  if (isloading) return <div>Loading...</div>;
-  if (isError) return <div>Error</div>; */
-  // console.log(data);
 
   return (
     <>
