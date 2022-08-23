@@ -31,10 +31,10 @@ const Contact = () => {
           <div className={styles.contact}>
             <div className={styles.image}>
               <Image
-                src="/property3.jpg"
+                src="/property3.webp"
                 alt="property "
-                priority={true}
                 layout="fill"
+                priority
               />
               <div className={styles.typed}>
                 <div>
