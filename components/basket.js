@@ -8,25 +8,25 @@ export const portfolioData = [
     id: "1",
     address: "3817 N Ashland Ave",
     description: "48 Unit Ground Up Development",
-    image: "/property1.jpg",
+    image: "/property1.webp",
   },
   {
     id: "2",
     address: "2042 - 2046 W Irving Park",
     description: "20 Unit Ground Up Development",
-    image: "/property2.jpg",
+    image: "/property2.webp",
   },
   {
     id: "3",
     address: "Kedzie & Palmer Portfolio",
     description: "12 Unit Redevelopment",
-    image: "/property3.jpg",
+    image: "/property3.webp",
   },
   {
     id: "4",
     address: "101 Christie Lane",
     description: "Luxury Vacation Rental",
-    image: "/property4.jpg",
+    image: "/property4.webp",
   },
 ];
 
@@ -77,21 +77,21 @@ export const images = [
   {
     id: "1",
     alt: "3817 N Ashland Ave",
-    source: "/property1.jpg",
+    source: "/property1.webp",
   },
   {
     id: "2",
     alt: "3817 N Ashland Ave",
-    source: "/property2.jpg",
+    source: "/property2.webp",
   },
   {
     id: "3",
     alt: "3817 N Ashland Ave",
-    source: "/property3.jpg",
+    source: "/property3.webp",
   },
   {
     id: "4",
     alt: "3817 N Ashland Ave",
-    source: "/property4.jpg",
+    source: "/property4.webp",
   },
 ];
