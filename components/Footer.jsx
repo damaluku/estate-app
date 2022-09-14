@@ -5,7 +5,6 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Midline from "./Midline";
-import { SubLine } from "../components/styled";
 
 const Footer = () => {
   useEffect(() => {
@@ -57,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.credits}>
-            <h3>made by damian dark</h3>
+            <h3>made by damian aluku</h3>
           </div>
         </div>
       </footer>

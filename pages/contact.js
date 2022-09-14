@@ -12,7 +12,7 @@ const Contact = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["we are here to help provide your dream home", "SOTAKE "],
+      strings: ["we are here to help provide your dream home", "DESTATE"],
       typeSpeed: 50,
       backSpeed: 40,
     };
@@ -30,12 +30,7 @@ const Contact = () => {
         <Main>
           <div className={styles.contact}>
             <div className={styles.image}>
-              <Image
-                src="/property3.webp"
-                alt="property "
-                layout="fill"
-                priority
-              />
+              <Image src="/indoor.jpg" alt="property" layout="fill" priority />
               <div className={styles.typed}>
                 <div>
                   <span ref={element} />
