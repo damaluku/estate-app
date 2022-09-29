@@ -56,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.credits}>
-            <h3>made by damian aluku</h3>
+            <h3>Developed by damian</h3>
           </div>
         </div>
       </footer>

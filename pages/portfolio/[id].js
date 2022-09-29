@@ -4,8 +4,14 @@ import Image from "next/image";
 import { Container } from "../../components/styled";
 import Link from "next/link";
 import db from "../api/data.json";
+import { useRouter } from "next/router";
 
 const Details = ({ image, description, address, details }) => {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
   return (
     <>
       <Container className={styles.container}>
@@ -29,11 +35,11 @@ export default Details;
 
 export const getStaticProps = async ({ params }) => {
   const posts = db.find((item) => item.id == params.id);
+
   const { address, description, image, details } = posts;
 
   return {
     props: {
-      posts,
       address,
       description,
       image,
@@ -50,8 +56,13 @@ export const getStaticPaths = async () => {
       },
     };
   });
+
   return {
-    paths,
-    fallback: false,
+    paths: [
+      { params: { id: "1" } },
+      { params: { id: "2" } },
+      { params: { id: "3" } },
+    ],
+    fallback: true,
   };
 };

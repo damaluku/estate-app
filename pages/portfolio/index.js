@@ -21,7 +21,11 @@ const Portfolio = () => {
             {data &&
               data.map((portfolio) => {
                 return (
-                  <Link href={`/portfolio/${portfolio.id}`} key={portfolio.id}>
+                  <Link
+                    href={`/portfolio/${portfolio.id}`}
+                    key={portfolio.id}
+                    passHref
+                  >
                     <div
                       className={styles.portfolioBox}
                       data-aos="fade-up-left"
