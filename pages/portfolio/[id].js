@@ -15,15 +15,19 @@ const Details = ({ image, description, address, details }) => {
   return (
     <>
       <Container className={styles.container}>
-        <div>
-          <div className={styles.image}>
-            <Image src={image} alt={address} layout="fill" />
+        <div className={styles.cover}>
+          <div>
+            <div className={styles.image}>
+              <Image src={image} alt={address} layout="fill" />
+            </div>
+            <div className={styles.info}>
+              <h2>{address}</h2>
+              <h3>{description}</h3>
+              <p>{details}</p>
+            </div>
           </div>
-          <h2>{address}</h2>
-          <h3>{description}</h3>
-          <p>{details}</p>
+          <Link href="/portfolio">Return</Link>
         </div>
-        <Link href="/portfolio">Return to Portfolio</Link>
       </Container>
     </>
   );

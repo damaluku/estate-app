@@ -56,7 +56,12 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.credits}>
-            <h3>Developed by damian</h3>
+            <h3>
+              Developed by{" "}
+              <a href="https://damianaluku.netlify.app/" target="_blank">
+                Damian
+              </a>
+            </h3>
           </div>
         </div>
       </footer>

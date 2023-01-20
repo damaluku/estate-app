@@ -9,12 +9,23 @@ const ImageCarousel = () => {
   return (
     <>
       <div className={styles.container}>
-        <Carousel autoPlay interval={2500} infiniteLoop showIndicators={false}>
+        <Carousel
+          autoPlay
+          interval={2500}
+          infiniteLoop
+          showIndicators={false}
+          showThumbs={false}
+        >
           {images.map((image) => {
             return (
               <>
                 <div key={image.id} className={styles.imageContainer}>
-                  <Image src={image.source} alt={image.alt} layout="fill" />
+                  <Image
+                    src={image.source}
+                    alt={image.alt}
+                    layout="fill"
+                    priority
+                  />
                   <p className="legend">{image.alt}</p>
                 </div>
               </>
