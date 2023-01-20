@@ -5,6 +5,7 @@ import { Container } from "../../components/styled";
 import Link from "next/link";
 import db from "../api/data.json";
 import { useRouter } from "next/router";
+import Footer from "../../components/Footer";
 
 const Details = ({ image, description, address, details }) => {
   const router = useRouter();
@@ -28,6 +29,7 @@ const Details = ({ image, description, address, details }) => {
           </div>
           <Link href="/portfolio">Return</Link>
         </div>
+        <Footer />
       </Container>
     </>
   );
