@@ -29,8 +29,8 @@ const Details = ({ image, description, address, details }) => {
           </div>
           <Link href="/portfolio">Return</Link>
         </div>
-        <Footer />
       </Container>
+      <Footer />
     </>
   );
 };
